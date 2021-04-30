@@ -13,14 +13,12 @@ This is a laboratory to run [k3s](https://k3s.io/) in centos7 virtual machines (
 ## Usage:
 
 1. Clone this repository
-2. Run `vagrant up` and wait.. all 3 servers (master, node01, node02) start*
-*(eventually it will prompt host password for /etc/hosts configuration)
+2. Run `vagrant up` and wait.. all 3 servers (master, node01, node02) start (eventually it will prompt host password for /etc/hosts configuration)
 3. Enter master node `vagrant ssh k3s-master`
 4. Run `sudo su -` to elevate permissions
 5. Run `kubectl get nodes` to se cluster ready to go
 
-To clean all VMs:
-`vagrant destroy -f`
+To destroy all VMs: `vagrant destroy -f`
 
 ## Screenshots
 
