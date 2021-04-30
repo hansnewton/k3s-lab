@@ -2,12 +2,13 @@
 
 ## Context
 
-This is a laboratory to run [k3s](https://k3s.io/) in centos7 virtual machines using vagrant and virtualbox provider.
+This is a laboratory to run [k3s](https://k3s.io/) in centos7 virtual machines (with 512MB of RAM and 1 CPU each) using vagrant and virtualbox provider.
 
 ## Pre-requisites
 
 - [Vagrant](https://www.vagrantup.com/downloads)  installed
 - [Virtualbox](https://www.virtualbox.org/wiki/Downloads) installed
+- Hostmanager for vagrant run `vagrant plugin install vagrant-hostmanager`
 
 ## Usage:
 
