@@ -8,7 +8,7 @@ This is a laboratory to run [k3s](https://k3s.io/) in centos7 virtual machines (
 
 - [Vagrant](https://www.vagrantup.com/downloads)  installed
 - [Virtualbox](https://www.virtualbox.org/wiki/Downloads) installed
-- Hostmanager for vagrant run `vagrant plugin install vagrant-hostmanager`
+- [Hostmanager](https://github.com/devopsgroup-io/vagrant-hostmanager) for vagrant, run `vagrant plugin install vagrant-hostmanager`
 
 ## Usage:
 
