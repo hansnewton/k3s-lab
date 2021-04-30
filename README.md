@@ -20,4 +20,4 @@ This is a laboratory to run [k3s](https://k3s.io/) in centos7 virtual machines u
 ## Screenshots
 
 Expected results
-![Expected](https://github.com/hansnewton/k3s-lab/blob/master/screenshots/expected.png?raw=true)
+![Expected](https://github.com/hansnewton/k3s-lab/raw/main/screenshots/expected.png)
