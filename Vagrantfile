@@ -6,7 +6,7 @@ Vagrant.configure("2") do |config|
   # box with guet additions for centos7
   config.vm.box = "bento/centos-7" 
 
-  # forçar login por senha
+  # force login by pass
   #config.ssh.username = 'vagrant'
   #config.ssh.password = 'vagrant'
   #config.ssh.insert_key = false

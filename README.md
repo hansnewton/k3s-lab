@@ -19,6 +19,32 @@ This is a laboratory to run [k3s](https://k3s.io/) in centos7 virtual machines (
 
 To destroy all VMs: `vagrant destroy -f`
 
+## Hello-word
+From https://kubernetes.io/docs/tutorials/stateless-application/expose-external-ip-address/
+
+
+`kubectl apply -f /vagrant/hello-word.yml`
+`kubectl get deployments hello-world`
+`kubectl describe deployments hello-world`
+
+`kubectl get replicasets`
+
+`kubectl expose deployment hello-world --type=LoadBalancer --name=my-service`
+
+`kubectl delete service my-service`
+`kubectl delete deployment hello-world`
+
+Use the external IP address (`LoadBalancer Ingress`) to access the Hello World application:
+
+`curl http://<external-ip>:<port>`
+
+In this lab, access http://192.168.56.10:8080/
+
+## Debug commands
+
+`/usr/local/bin/kubectl get pods --all-namespaces -A`
+`kubectl --namespace=<NAMESPACE_NAME> logs <POD_NAME>`
+
 ## Screenshots
 
 Expected results
