@@ -1,4 +1,5 @@
-
+#!/bin/bash
+set -x
 systemctl restart network
 
 cat <<EOF >> /etc/hosts
@@ -35,3 +36,4 @@ echo 'export PATH=$PATH:/usr/local/bin/' >> /root/.bashrc
 source /root/.bashrc
 
 cat /var/lib/rancher/k3s/server/token
+set +x

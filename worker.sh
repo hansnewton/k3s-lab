@@ -1,3 +1,5 @@
+#!/bin/bash
+set -x
 systemctl restart network
 
 timedatectl set-timezone America/Sao_Paulo
@@ -23,3 +25,4 @@ systemctl stop iptables
 curl -sfL https://get.k3s.io | K3S_URL="https://${MANAGER_IP}:6443" K3S_TOKEN="${NODE_TOKEN}" INSTALL_K3S_EXEC="--node-ip=${WORKER_IP} --node-external-ip=${WORKER_IP}" sh -
 echo 'export PATH=$PATH:/usr/local/bin/' >> /root/.bashrc
 source /root/.bashrc
+set +x

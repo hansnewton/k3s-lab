@@ -23,8 +23,8 @@ Vagrant.configure("2") do |config|
 
     m.vm.provider :virtualbox do |v|
       v.name = 'k3s-manager'
-      v.memory = 512
-      v.cpus = 1
+      v.memory = 1024
+      v.cpus = 2
     end
 
     m.vm.provision :shell do |shell| 
@@ -41,8 +41,8 @@ Vagrant.configure("2") do |config|
 
     m.vm.provider :virtualbox do |v|
       v.name = 'k3s-node01'
-      v.memory = 512
-      v.cpus = 1
+      v.memory = 1024
+      v.cpus = 2
     end
 
     m.vm.provision :shell do |shell| 
@@ -59,8 +59,8 @@ Vagrant.configure("2") do |config|
 
     m.vm.provider :virtualbox do |v|
       v.name = 'k3s-node02'
-      v.memory = 512
-      v.cpus = 1
+      v.memory = 1024
+      v.cpus = 2
     end
 
     m.vm.provision :shell do |shell| 
